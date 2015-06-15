@@ -1,0 +1,9 @@
+<nav>
+	<select ng-model="date.month">
+		<option ng-repeat="month in months" value="{{$index}}" ng-selected="$index == date.month">{{month}}</option>
+	</select>
+	<select ng-model="date.year">
+		<option ng-repeat="year in years" value="{{year}}" ng-selected="year == date.year">{{year}}</option>
+	</select>
+	<div ng-transclude></div>
+</nav>

@@ -1,0 +1,4 @@
+<p>Calendar</p>
+<div class="calendar-container">
+	<div ng-repeat="day in range.days" class="calendar-cell" ng-class="{outer: !isCurrentMonth(day.month)}">{{day.day}}</div>
+</div>
